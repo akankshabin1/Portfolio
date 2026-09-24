@@ -1,0 +1,75 @@
+void createContact(AddressBook *addressBook) //-----------------------------------------------------------------------------------
+{                                            // Define the logic to create a Contacts
+    char user_name[20];
+    char user_phone[10];
+    char user_mail[20];
+    printf("Enter the Name: ");
+    
+    getchar();
+    scanf("%[^\n]", user_name); //\n cancled by keyboard enter
+    getchar();         // uses new line so that it won't affect next charater operation/input
+    while (!(validateName(user_name))) // validateName => 0= invalid name , 1= valid name
+    {
+        printf("Entered name is invalid.\n");
+    }
+    strcpy(addressBook->contacts[addressBook->contactCount].name, user_name);
+
+    getchar();
+    printf("Enter the Phone number: ");
+    scanf("%[^\n]", user_phone);
+    getchar();
+    while (!(validatePhone(addressBook, user_phone))) // validatePhone => 0= invalid name , 1= valid name
+    {
+        printf("Entered name is invalid.\n");
+    }
+    strcpy(addressBook->contacts[addressBook->contactCount].phone, user_phone);
+
+    printf("Enter the Mail ID: ");
+    scanf("%s", user_mail);
+    //getchar();
+    while (!(validateEmail(addressBook, user_mail))) // validateEmail => 0= invalid name , 1= valid name
+    {
+        printf("Entered name is invalid.\n");
+    }
+    strcpy(addressBook->contacts[addressBook->contactCount].email, user_mail); // fun to copy i/p values to Addressbook
+
+    addressBook->contactCount++;
+}
+
+
+
+*************************************************************************
+int validateName(char *userName) // 0==> invalid name , 1==> valid name  //----------------------------------------------------------------------
+{
+    int i;
+    for (i = 0; userName[i] != '\0'; i++)
+    {
+        if (!((userName[i] >= 'A' && userName[i] <= 'Z') || (userName[i] >= 'a' && userName[i] <= 'z') || userName[i] == ' '))
+        {
+            return 0; // invalid name
+            break;
+        }
+    }
+    if(userName[i]!='\0')
+    return 1; // valid name
+}
+
+***************************************************************************
+
+$ ./a.out
+File opening Successful
+------------------------------------
+        Address Book Menu
+------------------------------------
+ 1. Create contact
+ 2. Search contact
+ 3. Edit contact
+ 4. Delete contact
+ 5. List all contacts
+ 6. Save contacts
+ 7. Exit
+---------------------------------------
+Enter your choice (Enter 7 to Exit) : 1
+
+----------------------------------------
+Enter the Name: Radha

@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Akanksha Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<style>
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #d4b55e;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+.technical-skills-list p {
+	margin-bottom: 0.85rem;
+	line-height: 1.5;
+}
+
+.technical-skills-list strong {
+	color: #d4b55e;
+}
+
+</style>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Akanksha</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#experience-section" class="nav-link"><span>Experience</span></a></li>
+	          <li class="nav-item dropdown">
+				<a href="#project-section" class="nav-link dropdown-toggle" id="projects-dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Projects/Upskilling</span></a>
+				<ul class="dropdown-menu" aria-labelledby="projects-dropdown">
+					<li><a class="dropdown-item" href="#academic-projects">Academic</a></li>
+					<li><a class="dropdown-item" href="#ai-projects">AI</a></li>
+					<li class="dropdown-submenu">
+						<a class="dropdown-item dropdown-toggle" href="#embedded-projects" aria-haspopup="true" aria-expanded="false">Embedded</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#c-projects">C</a></li>
+							<li><a class="dropdown-item" href="#data-structures-projects">Data Structures</a></li>
+							<li><a class="dropdown-item" href="#li-projects">Linux Internals</a></li>
+							<li><a class="dropdown-item" href="#microcontrollers-projects">Microcontrollers</a></li>
+							<li><a class="dropdown-item" href="#rtos-projects">RTOS</a></li>
+							<li><a class="dropdown-item" href="#device-driver-projects">Device Driver</a></li>
+						</ul>
+					</li>
+					<li><a class="dropdown-item" href="#aws-projects">AWS</a></li>
+					<li><a class="dropdown-item" href="#data-analytics-projects">PowerBI/Data Analytics</a></li>
+					<li><a class="dropdown-item" href="#automation-testing-projects">Automation Testing</a></li>
+				</ul>
+			</li>
+			  <li class="nav-item dropdown">
+				<a href="#achievements-section" class="nav-link dropdown-toggle" id="achievements-dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span>Achievements</span></a>
+				<ul class="dropdown-menu" aria-labelledby="achievements-dropdown">
+					<li><a class="dropdown-item" href="#academic-achievements">Academic</a></li>
+					<li><a class="dropdown-item" href="#cognizant-achievements">Cognizant</a></li>
+					<li><a class="dropdown-item" href="#embedded-achievements">Embedded System</a></li>
+					<li><a class="dropdown-item" href="#aws-achievements">AWS</a></li>
+					<li><a class="dropdown-item" href="#cocurricular-achievements">Co-curricular Activities</a></li>
+				</ul>
+			</li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_1.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hello</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Akanksha</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'C',
+						'Linux Internals',
+						'Microcontroller',
+						'CPP',
+						'DSA',
+						'AWS',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+						<br>
+						<br>
+						<h5>Ex Cognizant - Programmer Analyst</h5>
+			            <h2>Embedded Systems  &  IoT Enthusiast</h2>
+						 <br>
+			            <p><a href="https://www.linkedin.com/in/akanksha-3726201a9/" class="btn btn-white btn-outline-white py-3 px-4" target="_main">LinkedIn</a>   <!-- class="btn btn-primary py-3 px-4"-->
+						   <a href="https://github.com/akankshabin1" class="btn btn-white btn-outline-white py-3 px-4" target="_main">GitHub</a>
+						   <a href="https://leetcode.com/u/AkankshaBin/" class="btn btn-white btn-outline-white py-3 px-4" class="hover-link" target="_main">LeetCode</a>
+						</p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Akanksha</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Programmer Analyst</span></p>
+										<p><span class="title-s">Experience: </span> <span>2 Years</span></p>
+										<p><span class="title-s">Company: </span> <span>Ex-Cognizant</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s"><b><br><h3>Technical Skills</h3></b></p>
+									<div class="technical-skills-list">
+										<p><strong>Programming:</strong> C, C++, Python (basics), Data Structures</p>
+										<p><strong>Linux System Programming:</strong> System Calls, Process Management, Signals, IPC (Pipe, FIFO, Shared Memory), Multithreading</p>
+										<p><strong>Networking:</strong> Socket Programming (TCP/UDP), TCP/IP Fundamentals, OSI Model, Client-Server Architecture</p>
+										<p><strong>Embedded Systems:</strong> Embedded C, PIC18F4580, Low-Level Programming</p>
+										<p><strong>Protocols:</strong> UART, SPI, I2C, CAN, TCP, UDP, Ethernet</p>
+										<p><strong>RTOS:</strong> Scheduling, Interrupts, Mutex, Semaphores</p>
+										<p><strong>Tools:</strong> Linux, GDB, Git, JIRA, VS Code</p>
+									</div>
+																		
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>I have professional software experience and I am now specializing in Embedded Systems and Firmware. <br> 
+									 <br>Fervour lies in utilizing technology to elevate software quality and surpass client expectations</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<br>
+									<li class="d-flex"><span>Education : </span> <span>Bachelor of Engineering [EEE]</span></li>
+									<li class="d-flex"><span>Courses : </span> <span>AWS - SimpliLearn <br>Embedded System - Emertxe, Bengaluru </span></li>									
+									<li class="d-flex"><span>Internship : </span> <span>IISc (Indian Institute of Science) <br>BHEL (Bharat Heavy “Electricals Limited)</span></li>
+									<li class="d-flex"><span>Hobby : </span> <span> Technical Exploration, Painting, Arts & Crafts </span></li>
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+	
+    <section class="ftco-section ftco-no-pb" id="experience-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">         	
+            <h2 class="mb-4">Experience</h2>
+			<div class="underline"></div>
+          </div>
+        </div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">2021-2022</span>
+						<span class="position"><h3>Cognizant</h3></span>
+						<h6>Programmer Analyst Trainee</h6>
+						
+						<h4>Manual Testing</h4>
+						<p class="mt-4">CTS, a leading American multinational information technology services and consulting company.
+							<ul>
+								<li>Tasks which I have performed under manual testing includes: test plan, writing test cases, functional testing, regression testing, SDLC, STLC , Defect management cycle using JIRA, creating test closure document.</li>
+								<li>I was POC (Point of Contact) for few Projects, where I had to tally everyday's progress and update to OnSite Senior Management.</li>
+								<li>I have provided KT (Knowledge Transfer) to new members joining the team.</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<h6>Programmer Analyst</h6>
+						<h4>Automation Testing</h4>
+							<ul>
+								<li>I play a crucial role in the software development process by ensuring that software products and applications meet quality standards and fulfill the automation testing requirements.</li>
+								<li>I managed automation test scripts, aiming to enhance software functionality and improve overall testing code.</li>
+								<li>I my technical skills like Python, PostMan, Selenium, Robot Frameworks, MySQL and API testing using SOAP UI</li>
+							</ul>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		<br>
+		<br>
+		<div class="row">
+			<h1 class="big-4">Education</h1>
+			<div class="underline"></div>
+		</div>
+		<br>	
+			<div class="row">
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2016-2020</span>
+    					<h2>Bachelor of Engineering</h2>
+    					<span class="position">Visvesvaraya Technological University</span>
+    					<p class="mt-4">Grade: First class.</p>
+    				</div>
+    			</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2015-2016</span>
+    					<h2>Higher Secondary School</h2>
+    					<span class="position">Kendriya Vidyalaya No 2</span>
+    					<p class="mt-4">Grade: First class.</p>
+    				</div>
+				</div>
+
+    			<div class="col-md-6">
+    				<div class="resume-wrap ftco-animate">
+    					<span class="date">2014</span>
+    					<h2>Secondary School</h2>
+    					<span class="position">Kendriya Vidyalaya No 2</span>
+    					<p class="mt-4">Grade: First class with Distinction.</p>
+    				</div>
+				</div>				
+    		</div>
+    	</div>
+    </section>
+	
+	
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+		<div class="row justify-content-center mb-5 pb-5">
+			<div class="col-md-7 heading-section text-center ftco-animate">
+				<h1 class="big big-2">Projects</h1>
+			  <!-- <h2 class="mb-4">Projects</h2> -->
+			</div>
+		  </div>
+			<div id="ai-projects" class="project-subsection" style="padding-top: 70px; margin-top: -70px;">
+				<div class="row justify-content-center mt-5 mb-4">
+					<div class="col-md-9 heading-section text-center ftco-animate">
+						<h2>AI Projects</h2>
+						<hr style="width: 100px; border-top: 2px solid #d4b55e; margin-top: 1rem; margin-bottom: 2rem;">
+					</div>
+				</div>
+			</div>
+			<div id="embedded-projects" class="project-subsection" style="padding-top: 70px; margin-top: -70px;">
+				<div class="row justify-content-center mt-5 mb-4">
+					<div class="col-md-9 heading-section text-center ftco-animate">
+						<h2>Embedded Projects</h2>
+						<hr style="width: 100px; border-top: 2px solid #d4b55e; margin-top: 1rem; margin-bottom: 2rem;">
+					</div>
+				</div>
+				<div id="c-projects" class="project-subsection">
+					<h3>C Projects</h3>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Image Steganography using LSB Encoding and Decoding</span>
+						<p class="mt-4"><ul><li>Implemented LSB-based image steganography in C using BMP files to securely hide and extract a secret file without visible distortion.</li><li>Used bitwise operations, string manipulation, structures, enums, file handling, pointers, functions, and command line arguments.</li><li>Learned to handle bit-level alignment, pixel and image-header processing, and binary file synchronization.</li><li><a href="https://github.com/akankshabin1/Embedded_Steganography" target="_main">View on GitHub</a></li></ul></p>
+					</div>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">MP3 Tag Reader &amp; Editor</span>
+						<p class="mt-4"><ul><li>Developed a C application to read and modify MP3 ID3 metadata such as title, artist, and album without corrupting audio data.</li><li>Used file handling, pointers, bitwise operations, structures, enums, endianness handling, and string manipulation.</li><li>Learned safe ID3 frame editing, temporary-file handling, and big-endian/little-endian conversion.</li><li><a href="https://github.com/akankshabin1/Embedded_MP3TagReader_Editor" target="_main">View on GitHub</a></li></ul></p>
+					</div>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Address Book</span>
+						<p class="mt-4"><ul><li>Built a menu-driven C application to create, search, update, delete, and display contacts using file-based storage.</li><li>Used structures, file handling, pointers, string manipulation, sorting, and functions.</li><li>Learned buffer handling, record updates, pointer-based data management, and file-pointer operations.</li><li><a href="https://github.com/akankshabin1/Embedded_AddressBook" target="_main">View on GitHub</a></li></ul></p>
+					</div>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Lexical Analyzer</span>
+						<p class="mt-4"><ul><li>Implemented a lexical analyzer in C to convert source code into tokens such as keywords, identifiers, operators, and constants.</li><li>Used functions, pointers, string manipulation, loops, and basic error handling.</li><li>Learned compiler-level tokenization and handling of syntax-related token recognition edge cases.</li><li><a href="https://github.com/akankshabin1/Embedded_LexicalAnalyser" target="_main">View on GitHub</a></li></ul></p>
+					</div>
+				</div>
+				<div id="data-structures-projects" class="project-subsection">
+					<h3>Data Structures Projects</h3>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Arbitrary Precision Calculator</span>
+						<p class="mt-4"><ul><li>Implemented large-number arithmetic using doubly linked lists and dynamic memory allocation.</li><li>Used doubly linked lists, dynamic memory allocation, pointers, and structures.</li><li>Learned linked-list operations, memory management, carry, borrow, sign handling, and time complexity.</li><li><a href="https://github.com/akankshabin1/Arbitrary-Precision-Calculator---DSA" target="_main">View on GitHub</a></li></ul></p>
+					</div>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Inverted Search</span>
+						<p class="mt-4"><ul><li>Developed a text indexing system using hashing to enable fast word searches across multiple files.</li><li>Used linked lists, hashing, file handling, and structures.</li><li>Learned collision handling, word-frequency tracking, dynamic memory allocation, and efficient search algorithms.</li><li><a href="https://github.com/akankshabin1/Inverted-Search-Project--DSA" target="_main">View on GitHub</a></li></ul></p>
+					</div>
+				</div>
+				<div id="li-projects" class="project-subsection">
+					<h3>Linux Internals Projects</h3>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">Mini Shell</span>
+						<p class="mt-4"><ul><li>Built a Bash-like command processor supporting piping, customizable prompts, built-in commands, external commands, and job control.</li><li>Used fork, execvp, waitpid, signals, DMA, arrays, pointers, structures, strings, macros, and file handling.</li><li>Learned process management, inter-process communication, Linux system calls, and signal handling.</li><li><a href="https://github.com/akankshabin1/LI_Minishell" target="_main">View on GitHub</a></li></ul></p>
+					</div>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">TFTP Protocol Implementation</span>
+						<p class="mt-4"><ul><li>Implemented a lightweight file transfer protocol using UDP sockets with basic error handling.</li><li>Used socket programming, UDP, file handling, structures, control statements, macros, extern, and global variables.</li><li>Learned TFTP packet formats, acknowledgements, retransmissions, packet-loss handling, and UDP communication.</li><li><a href="https://github.com/akankshabin1/TFTP-Server-and-Client" target="_main">View on GitHub</a></li></ul></p>
+					</div>
+				</div>
+				<div id="microcontrollers-projects" class="project-subsection">
+					<h3>Microcontrollers Projects</h3>
+					<div class="resume-wrap ftco-animate">
+						<span class="date">CAN-Based Automotive Dashboard</span>
+						<p class="mt-4"><ul><li>Developed an Embedded C automotive dashboard using CAN communication to display speed, RPM, gear, indicators, fuel level, and temperature.</li><li>Used CAN communication, ADC, keypad and CLCD interfacing, timer interrupts, bitwise operations, structures, pointers, and PIC18F4580.</li><li>Learned CAN message parsing, bit-level data mapping, and reliable communication between multiple automotive ECUs.</li><li><a href="https://github.com/akankshabin1/CAN-Based-Automotive-Dashboard" target="_main">View on GitHub</a></li></ul></p>
+					</div>
+				</div>
+				<div id="rtos-projects" class="project-subsection">
+					<h3>RTOS Projects</h3>
+				</div>
+				<div id="device-driver-projects" class="project-subsection">
+					<h3>Device Driver Projects</h3>
+				</div>
+			</div>
+			<div id="aws-projects" class="project-subsection" style="padding-top: 70px; margin-top: -70px;">
+            <div class="row justify-content-center mt-5 mb-4">
+                <div class="col-md-9 heading-section text-center ftco-animate">
+					<h2>AWS</h2>
+                    <hr style="width: 100px; border-top: 2px solid #d4b55e; margin-top: 1rem; margin-bottom: 2rem;">
+                </div>
+            </div>
+            <!--<p class="text-center ftco-animate"><em>Details about AWS projects will be added soon!</em></p> -->				
+			<div class="resume-wrap ftco-animate">
+				  <span class="date">Data Pipeline on AWSAmazon </span>					
+				  <p class="mt-4">
+					  <ul>
+						  <li>Built a scalable data pipeline on AWS to transform CSV files into JSON using AWS Glue, with automated job triggering via AWS Lambda.</li>
+						  <li>Leveraged Amazon S3 for data storage, implemented IAM policies for secure access, and integrated CloudWatch for monitoring and operational insights.</li>
+						  <li><a href="https://github.com/akankshabin1/Data-Pipeline-on-AWS" target="_main">View the details on GitHub</a></li>
+					  </ul>
+				  </p>
+			  </div>
+			<br>
+			<div class="resume-wrap ftco-animate">
+				  <span class="date">Terraform with AWS</span>					
+				  <p class="mt-4">
+					<ul>
+						  <li>Published Portfolio on AWS S3 using basic functions of Terraform</li>
+						  <li><a href="https://github.com/akankshabin1/Terraform-with-AWS" target="_main">View GitHub for more details</a></li>
+					  </ul>
+				  </p>
+			  </div>
+			</div>
+			<br>
+			<div class="resume-wrap ftco-animate">
+				  <span class="date">Real Time Data Management</span>					
+				  <p class="mt-4">
+					  <ul>
+						  <li>The project focuses on setting up a real-time data pipeline in AWS using Kinesis Data Streams, Lambda, and DynamoDB.</li>
+						  <li>The goal is to ingest data into a Kinesis stream, process it using Lambda functions</li>
+						  <li><a href="https://github.com/akankshabin1/AWS_Real-Time-Data-Management" target="_main">View on GitHub</a></li>
+					  </ul>
+				  </p>
+			</div>
+			<br>
+			<div class="resume-wrap ftco-animate">
+				  <span class="date">AWS Server Monitoring</span>					
+				  <p class="mt-4">
+					  <ul>
+						  <li>It monitors and manages an EC2 instance using CloudWatch and IAM.</li>
+						  <li>CloudWatch ensures performance tracking, while IAM provides secure administrator access.</li>
+						  <li><a href="https://github.com/akankshabin1/AWS_Server-Monitoring" target="_main">Visite GitHub for detailed steps</a></li>
+					  </ul>
+				  </p>
+			</div>
+			<br>
+
+
+		<div id="data-analytics-projects" class="project-subsection" style="padding-top: 70px; margin-top: -70px;">
+ 			<div class="row justify-content-center mt-5 mb-4">
+                <div class="col-md-9 heading-section text-center ftco-animate">
+					<h2>PowerBI/Data Analytics</h2>
+                    <hr style="width: 100px; border-top: 2px solid #d4b55e; margin-top: 1rem; margin-bottom: 2rem;">
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-4 d-flex ftco-animate"></div>
+            </div>
+        </div>       			
+		<div id="extra-projects"></div>
+		<div class="row d-flex">
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/akankshabin1/Udemy-Data-Analysis-Python/blob/main/Udemy%20Dataset%20Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');"></a>
+				<div class="text mt-3 float-right d-block">
+				  <h3 class="heading">
+					<a href="https://github.com/akankshabin1/Udemy-Data-Analysis-Python/blob/main/Udemy%20Dataset%20Analysis.ipynb">Udemy Data Analysis using Python (Pandas, NumPy)</a>
+				  </h3>
+				  <p>Conducted analysis on a Udemy dataset to examine course distribution by subject, year, level, and pricing. Identified trends in course popularity, duration, and profitability, along with subscriber patterns. Explored correlations between key factors such as reviews, price, lectures, and content duration to determine what drives course success.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/akankshabin1/Sales-Data-Analysis--Python/blob/main/Sales_Analysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_2.png');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/akankshabin1/Sales-Data-Analysis--Python/blob/main/Sales_Analysis.ipynb">Sales Data Analysis project using Python (Pandas, NumPy)</a></h3>
+				  <p>The analysis focused on enhancing customer experience, identifying opportunities to increase sales, and providing a detailed breakdown of sales variations across factors such as gender, age, location, state, marital status, and product categories.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry">
+				<a href="https://github.com/akankshabin1/Olympic-DataAnalysis-Python/blob/main/OlympicsAnalysis.ipynb" class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpeg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/akankshabin1/Olympic-DataAnalysis-Python/blob/main/OlympicsAnalysis.ipynb">Olympic Data Analysis using Python (Pandas, NumPy)</a></h3>
+				  <p>Conducted a comprehensive analysis of Olympic data, highlighting trends in performance over time. Key insights included the distribution of medals by gender, country medal counts, the total sports played, the male-to-female medal ratio, and the top 10 countries by gold, silver, and bronze medals won.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/akankshabin1/Zomato-Analysis-Power-BI/blob/main/Zomato%20dashboard%20Power%20BI.pdf" class="block-20 zoom-effect" style="background-image: url('images/proj_4.PNG');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/akankshabin1/Zomato-Analysis-Power-BI/blob/main/Zomato%20dashboard%20Power%20BI.pdf">Zomato data Analysis using Power BI</a></h3>
+				  <p>Developed a multi-page interactive Power BI dashboard to analyze Zomato's overall performance, including detailed customer behavior and city-wise analysis. Leveraged Zomato's dataset to uncover insights and provide data-driven recommendations aimed at enhancing overall operational efficiency and customer satisfaction.</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/akankshabin1/Global_SuperStore_Sales_PowerBI_Report/blob/main/PowerBI%20project.pdf" class="block-20 zoom-effect" style="background-image: url('images/proj_5.PNG');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/akankshabin1/Global_SuperStore_Sales_PowerBI_Report/blob/main/PowerBI%20project.pdf">Global SuperStore Sales Report using Power BI</a></h3>
+				  <p>Developed interactive dashboards and visualizations to analyze sales data, identify trends, and provide actionable insights to improve sales performance</p>
+				</div>
+			  </div>
+			</div>
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/akankshabin1/Flask_tourist-website" class="block-20 zoom-effect" style="background-image: url('images/proj_6.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href="https://github.com/akankshabin1/Flask_tourist-website">Bangalore Tourist Website using Python </a></h3>
+				  <p>Tourist website for Bangalorenusing Python, Flask, HTML & CSS, showcasing key tourist attractions in Bangalore.</p>
+				</div>
+			  </div>
+			</div>
+			<hr style="margin-top: 50px; margin-bottom: 50px; border: 0; border-top: 1px solid #eee;"> 
+		 </div> 
+		
+		 <div id="automation-testing-projects" class="project-subsection" style="padding-top: 70px; margin-top: -70px;">
+            <div class="row justify-content-center mt-5 mb-4">
+                <div class="col-md-9 heading-section text-center ftco-animate">
+					<h2>Automation Testing</h2>
+                    <hr style="width: 100px; border-top: 2px solid #d4b55e; margin-top: 1rem; margin-bottom: 2rem;">
+                </div>
+            </div>
+        </div>
+		<div>
+			  <div class="resume-wrap ftco-animate">
+				  <span class="date">Login Automation - Amazon </span>					
+				  <p class="mt-4"><h5> Automation script using Python, Selenium, and Robot Framework to check if a user is authentic on the Amazon website or not.</h5><br>
+					  <ul>
+						  <li>Four steps to check if a user is authentic or not: <br>
+							i. Navigate to Amazon's login page.<br>
+							ii. Input the user's email/phone number.<br>
+							iii. Enter the password.<br>
+							iv. Check if login is successful or if an error message appears & this will help determine if the user is authentic or not</li>
+						  <li><a href="https://github.com/akankshabin1/AmazonLoginAutomation" target="_main">View code on GitHub</a></li>
+					  </ul>
+				  </p>
+			  </div>
+			</div>
+			<br>
+			<div>
+				<div class="resume-wrap ftco-animate">
+					<span class="date"> Website Testing - Myntra</span>					
+					<p class="mt-4"><h5> Testing essential features like login, search, add to cart, checkout, applying discounts, and profile updates. </h5><br>
+						<ul>
+						<li>Automation regression test suite for the Myntra website, complete with cross-browser testing capabilities. 
+							This covers essential features like login, search, add to cart, checkout, applying discounts, and profile updates.</li>
+						<li><a href="https://github.com/akankshabin1/Myntra-website-Testing" target="_main">View code on GitHub</a></li>
+						</ul>
+					</p>
+				</div>
+			  </div> 
+			  <br>		 
+			<div id="academic-projects" class="project-subsection" style="padding-top: 70px; margin-top: -70px;">
+				<div class="row justify-content-center mt-5 mb-4">
+					<div class="col-md-9 heading-section text-center ftco-animate">
+						<h2>Academic</h2>
+						<hr style="width: 100px; border-top: 2px solid #d4b55e; margin-top: 1rem; margin-bottom: 2rem;">
+					</div>
+				</div>
+			</div>
+			<div class="resume-wrap ftco-animate">
+				<span class="date"> PLUS (Patient’s Life Upgraded Service) Wagon</span>					
+				<p class="mt-4"><h5>A modified Ambulance which can be lifted up in traffic and cross over other vehicles hence a smart way to manage traffic and save patients life as we will be able to cut down the travelling time and reach the hospital early, even in heavy traffic.</h5><br>
+					<ul>
+						<li>Published paper on “PLUS (Patient’s Life Upgraded Service) Wagon” in International Research Journal of Engineering and Technology (IRJET) Volume-7, Issue-5 May 2020.</li>
+						<li>Presented PLUS Wagon at National Level Virtual Project Competetion organised by SG Balekundri Institute of Technology Belagavi.</li>
+						<li><a href="https://www.irjet.net/archives/V7/i5/IRJET-V7I5438.pdf" target="_main">View Published Paper</a></li>
+						<li><a href="https://drive.google.com/drive/folders/1jdfHW-KjRb0v6yycwReZ0SFEfXKRzdjj?usp=drive_link" target="_main">View more</a></li>
+					</ul>
+				</p>
+			</div>
+			<br>
+			<div class="resume-wrap ftco-animate">
+				<span class="date"> SMART HELMET</span>					
+				<p class="mt-4"><h5>This project aims at reducing the risk of accidents by not wearing helmet. The major objective is to develop a system that can detect the alcohol content through Breath based sensing system and objective is to turn off the ignition system when the rider is under the Influence of alcohol.</h5><br>
+					<ul>
+						<li>Presented this project in SS12-2018 Age of Innovation organized by center for Q-rides</li>
+						<li><a href="https://drive.google.com/drive/folders/1KHZzmeNTIuZBEZZMsScWba6Dmp4FOToM?usp=drive_link" target="_main">View more</a></li>
+
+					</ul>
+				</p>
+			</div>	
+			<br>
+			<div class="resume-wrap ftco-animate">
+				<span class="date"> HYBRID CARS </span>					
+				<p class="mt-4"><h5>This project proposes a Hybrid electric car which solves the major problem of fuel and pollution.  The basic principle of hybrid car is to use energy that is stored in a battery during and after harnessing it from a solar panel and wind turbine. Power generated by renewal energy sources has recently become one of the most promising solutions for the electrification of islands and remote rural areas. But high dependency on whether conditions and the unpredictable nature of these renewable energy sources are the main drawbacks. To overcome this weakness, different green energy sources (solar and wind) and power electronic converters need to be integrated with each other. The charged batteries are used to drive the motor which serves here as an engine and moves the vehicle in reverse or forward direction. This idea, in future, will help to reduce the fuel consumption and reducing the pollution level as well as minimizing the running cost.</h5><br>
+					<ul>
+						<li>Presented project proposal in 7th ALL INDIA EWB Chapters Meet by ENGINEERS WITHOUT BORDERS-INDIA Chennai Professional Chapter on Topic “HYBRID CARS”.</li>
+						<li><a href="https://drive.google.com/drive/folders/1P9iyndtJ09CTX8Le2CXoBJKKwyDoNVaf?usp=drive_link" target="_main">View more</a></li>
+					</ul>
+				</p>
+			</div>	
+			<br>
+			<div class="resume-wrap ftco-animate">
+				<span class="date"> Women safety Jacket</span>					
+				<p class="mt-4"><h5> women's Safety Jacket is specially design jacket/coat which includes advanced features and technologies to improve the women's safety and security. This jacket include built-in alarm to emergency contacts numbers, GPS tracking systems and self-defense mechanisms(provied shock to the conductors placed on the Jacket). They are created to offer women added confidence and protection.</h5><br>
+					<ul>
+						<li>Presented idea on Women safety Jacket at IDEA BLAST 2018 by center for Q-Rides</li>
+						<li><a href="https://drive.google.com/drive/folders/1rNn7N2Z-rbjOFlH85wT0s8GLjtmvaMHD?usp=drive_link" target="_main">View more</a></li>
+					</ul>
+				</p>
+			</div>				
+		</div>
+    </section>
+	
+
+	<section class="ftco-section" id="achievements-section">
+		<div class="container"> 
+		  <div>
+			  <div class="row justify-content-center mb-5 pb-5">
+				  <div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Achievements</h1>
+					<h2 class="mb-4">Achievements</h2>
+					<p><h3> Following are my key Achievements. </h3></p>
+				  </div>
+			  </div>
+
+			<div id="academic-achievements" class="achievement-category">
+				<h3>Academic</h3>
+				<div class="resume-wrap ftco-animate">
+					<ul>
+						<li>Won Debate Competition for topic "Capital punishment" organised by EWB</li>
+						<li>Presented project proposal in 7th ALL INDIA EWB Chapters Meet by ENGINEERS WITHOUT BORDERS-INDIA Chennai Professional Chapter</li>
+						<li>Secured 3rd position in Abhisara paper presentation on topic “Electrical energy production from waste heat”</li>
+						<li>Presented idea on Women Safety Jacket at IDEA BLAST 2018 by center for Q-Rides.</li>
+						<li>Gold Medal in Kho-Kho (Kendriya Vidyalaya Southern Region at National Level).</li>
+					</ul>
+				</div>
+			</div>
+			<div id="cognizant-achievements" class="row achievement-category">
+				<div class="col-12"><h3>Cognizant</h3></div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>Cognizant Award</h5></p>
+					<iframe src="images/award_cognizant.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="300px" style="border: none;" oncontextmenu="return false;" onkeydown="return false;"></iframe>
+				</div>
+			</div>
+			<div id="embedded-achievements" class="row achievement-category">
+				<div class="col-12"><h3>Embedded System</h3></div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>Embedded Certification</h5></p>
+					<img src="EmbeddedCertification.jfif" alt="Embedded Certification" width="100%" style="height: 300px; object-fit: contain;">
+				</div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>C Spot Award</h5></p>
+					<iframe src="C_SpotAward.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="300px" style="border: none;" oncontextmenu="return false;" onkeydown="return false;"></iframe>
+				</div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>LI Spot Award</h5></p>
+					<iframe src="LI_SpotAward.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="300px" style="border: none;" oncontextmenu="return false;" onkeydown="return false;"></iframe>
+				</div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>C Attendance Spot Award</h5></p>
+					<iframe src="C_Att_SpotAward.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="300px" style="border: none;" oncontextmenu="return false;" onkeydown="return false;"></iframe>
+				</div>
+			</div>
+			<div id="aws-achievements" class="row achievement-category">
+				<div class="col-12"><h3>AWS</h3></div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>Simplilearn-AWS</h5></p>
+					<iframe src="https://success.simplilearn.com/136556875" width="100%" height="300px" style="border: none;" oncontextmenu="return false;" onkeydown="return false;"></iframe>
+				</div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>AWS Data analytics Coursera Certificate</h5></p>
+					<iframe src="images/AWS Data analytics Coursera.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="300px" style="border: none;" oncontextmenu="return false;" onkeydown="return false;"></iframe>
+				</div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>Simplilearn-Azure</h5></p>
+					<iframe src="images/Microsoft Azure Fundamentals.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="300px" style="border: none;" oncontextmenu="return false;" onkeydown="return false;"></iframe>
+				</div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>AWS Cloud Technical Essentials</h5></p>
+					<iframe src="images/AWS Cloud Technical Essentials.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="300px" style="border: none;" oncontextmenu="return false;" onkeydown="return false;"></iframe>
+				</div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>Introduction to ML- AWS</h5></p>
+					<iframe src="images/Introduction to ML_AWS.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="300px" style="border: none;" oncontextmenu="return false;" onkeydown="return false;"></iframe>
+				</div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>AWS Solutions Architect</h5></p>
+					<iframe src="images/AWS Solutions Architect.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="300px" style="border: none;" oncontextmenu="return false;" onkeydown="return false;"></iframe>
+				</div>
+				<div class="col-md-6">
+					<p class="mt-4"><h5>Big Data on AWS</h5></p>
+					<iframe src="images/Big Data on AWS.pdf#toolbar=0&navpanes=0&scrollbar=0" width="100%" height="300px" style="border: none;" oncontextmenu="return false;" onkeydown="return false;"></iframe>
+				</div>
+			</div>
+
+			  <br>
+			  <br>
+				  <div id="cocurricular-achievements" class="achievement-category">
+					<h3>Co-curricular Activities</h3>
+					<div class="resume-wrap ftco-animate">
+				  <ul>
+					  <li>Was awarded with the “Doing the right thing, the right way” in Cognizant <a href="https://drive.google.com/drive/folders/18sgvGAS55uB_qtPmB7w_54yyNI1YUrej" target="_main"> View Award</a></li>
+					  <li>Mentoring Sessions (Head Held High volunteering):<br>
+						  Job Responsibility: Mentoring students on Anger Management, Finance for Layman and Communication Skills
+					  </li>
+					  <li>Communicative English Program for College students <br>
+						  Job Responsibility: Career Preparation Workshop
+					  </li>
+					  <li>Spoken English session (Outreach Bangalore volunteering) <br>
+						  Job Responsibility: Spoken English for BBA Government College Kuvempunagar
+					  </li>
+					  <li>Secured 3rd position in technical Quiz event of Tech-fest “UDYUKTA-2018”.</li>
+				  </ul>				
+					</div>
+				  </div>
+		  </div>
+		  </div>
+	</section>
+		
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Below are the details to reach out to me !</p>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate contact-link">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-linkedin"></span>
+          		</div>
+          		<h3 class="mb-4">LinkedIn</h3>
+	            <p><a href="https://www.linkedin.com/in/akanksha-3726201a9/" target="_main">Akanksha_LinkedIn</a></p>
+	          </div>
+          </div>
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate contact-link">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+		            <h3 class="mb-4">Contact No</h3>
+	            <p><a href="tel://0101010101" target="_main">+ 91 8151810726</a></p>
+	          </div>
+          </div>
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate contact-link">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-envelope"></span>
+          		</div>
+		            <h3 class="mb-4">Email</h3>
+	            <p><a href="mailto:info@yoursite.com" target="_main">akankshabin123@gmail.com</a></p>
+	          </div>
+          </div>
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate contact-link">
+          	<div class="align-self-stretch box p-4 text-center">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-file-pdf-o"></span>
+          		</div>
+          		<h3 class="mb-4">Resume</h3>
+		            <p><a href="images/AkankshaResume.pdf" target="_main">View</a> | <a href="images/AkankshaResume.pdf" download="AkankshaResume.pdf">Download</a></p>
+	          </div>
+          </div>
+		  <div class="col-md-6 col-lg-3 d-flex ftco-animate contact-link">
+	          	<div class="align-self-stretch box p-4 text-center">
+	          		<div class="icon d-flex align-items-center justify-content-center">
+	          			<span class="icon-youtube"></span>
+	          		</div>
+	          		<h3 class="mb-4">YouTube</h3>
+	            <p><a href="https://www.youtube.com/channel/UCGkONIu09bCO_Axnr01S1qA" target="_main">AKA_Bytes - YouTube</a></p>
+	          </div> 
+          </div>
+
+		  <div class="contact-follow-up">
+			<div class="row justify-content-center">
+				<div class="col-md-8 ftco-animate text-center">
+					<h2>Have a Question?</h2>
+					<a href="https://forms.gle/fkQNV7TDKbQiFyqf8" class="btn btn-primary px-4 py-2" target="_main">Click Here</a>
+				</div>
+				<div class="col-md-8 heading-section text-center ftco-animate">
+					<p>Thank you for taking the time to visit my portfolio.</p>
+				</div>
+			</div>
+		  </div>
+   </div>
+ </section>
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		    <div class="row"></div>
+			<div class="col-md-12 text-center">
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		
+	</footer>
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script> 
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
